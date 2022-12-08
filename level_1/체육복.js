@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/42862#
+
 function solution(n, lost, reserve) {
   var answer = n - lost.length;
   let borrowing = 0;
