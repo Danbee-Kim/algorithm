@@ -2,10 +2,7 @@
 
 function solution(d, budget) {
   var answer = 0;
-  let ascending_order = function (x, y) {
-    return x - y;
-  };
-  d.sort(ascending_order);
+  d.sort((x, y) => x - y);
 
   for (let i = 0; i < d.length; i++) {
     budget -= d[i];
