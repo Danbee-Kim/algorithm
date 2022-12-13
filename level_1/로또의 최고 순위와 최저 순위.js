@@ -1,3 +1,5 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/77484
+
 function solution(lottos, win_nums) {
   var answer = [];
   let min = 0;
