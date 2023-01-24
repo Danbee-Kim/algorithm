@@ -1,0 +1,12 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/42748
+
+function solution(array, commands) {
+  var answer = [];
+  for (let i = 0; i < commands.length; i++) {
+    const newArr = array.slice(commands[i][0] - 1, commands[i][1]);
+    newArr.sort((a, b) => a - b);
+    answer.push(newArr[commands[i][2] - 1]);
+  }
+
+  return answer;
+}
