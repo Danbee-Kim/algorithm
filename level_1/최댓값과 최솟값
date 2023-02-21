@@ -1,0 +1,9 @@
+//https://school.programmers.co.kr/learn/courses/30/lessons/12939
+
+function solution(s) {
+  var answer = "";
+  const arr = s.split(" ");
+  answer = arr.sort((a, b) => a - b)[0] + " " + arr.sort((a, b) => b - a)[0];
+
+  return answer;
+}
